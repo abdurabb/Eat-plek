@@ -34,7 +34,7 @@ function NavBar() {
         <Container>
           <Navbar.Brand href="/">
             {/* <img src={portfolio} alt="logo" /> */}
-            <h1 className="logo">Portfolio</h1>
+            <h1 className="logo">EATPLEK</h1>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -57,7 +57,7 @@ function NavBar() {
                 }
                 onClick={() => onUpdateActiveLink("skills")}
               >
-                Skills
+                Download
               </Nav.Link>
               <Nav.Link
                 href="#projects"
@@ -68,28 +68,46 @@ function NavBar() {
                 }
                 onClick={() => onUpdateActiveLink("projects")}
               >
-                Projects
+                Images
               </Nav.Link>
+
+              <Nav.Link
+                href="#projects"
+                className={
+                  activeLink === "projects"
+                    ? "active navbar-link"
+                    : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("projects")}
+              >
+                Privacy Policy
+              </Nav.Link>
+
+
             </Nav>
 
             <span className="navbar-text">
               <div className="social-icon">
-                <a href={links.linkedin} target="_blank">
+                {/* links.linkedin */}
+                <a href={''} target="_blank">
                   <img src={navIcon1} alt="" />
                 </a>
-               
-                <a href={links.github} target="_blank">
+
+                {/* <a href={links.github} target="_blank">
                   <img src={navIcon3} alt="" />
-                </a>
-                <a href={links.instgram} target="_blank">
+                </a> */}
+
+
+                {/* links.instgram */}
+                <a href={''} target="_blank">
                   <img src={navIcon2} alt="" />
                 </a>
               </div>
               <a href="#connect">
 
-              <button className="navbar-connect">
-                <span>Let’s Connect</span>
-              </button>
+                <button className="navbar-connect">
+                  <span>Let’s Connect</span>
+                </button>
               </a>
             </span>
           </Navbar.Collapse>

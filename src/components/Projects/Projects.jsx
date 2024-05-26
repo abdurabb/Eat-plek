@@ -11,11 +11,11 @@ const Projects = ({openModal,setOpenModal}) => {
   return (
     <Container id="projects">
       <Wrapper>
-        <Title>Projects</Title>
+        <Title>Images</Title>
         <Desc>
-          I have worked on a wide range of projects. From static web apps to dynamic web apps. Here are some of my projects.
+        The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout
         </Desc>
-        <ToggleButtonGroup >
+        {/* <ToggleButtonGroup >
           {toggle === 'all' ?
             <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
             :
@@ -35,8 +35,8 @@ const Projects = ({openModal,setOpenModal}) => {
           }
           <Divider />
          
-        </ToggleButtonGroup>
-        <CardContainer>
+        </ToggleButtonGroup> */}
+        <CardContainer className='mt-2'>
           {toggle === 'all' && projects
             .map((project) => (
               <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>

@@ -22,9 +22,9 @@ function App() {
       <Banner />
       <Skills />
       <Projects openModal={openModal} setOpenModal={setOpenModal} />
-      {openModal.state && 
+      {/* {openModal.state && 
         <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-      }
+      } */}
       <Contact/>
       <Footer/>
       <ToastContainer/>

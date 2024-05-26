@@ -56,17 +56,19 @@ function Footer() {
     <FooterContainer>
       <FooterWrapper>
         <SocialMediaIcons>
-          <SocialMediaIcon href={links.instgram} target="_blank">
+        {/* links.instgram */}
+          <SocialMediaIcon href={''} target="_blank">
             <InstagramIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={links.github} target="_blank">
+          {/* <SocialMediaIcon href={links.github} target="_blank">
             <GitHubIcon />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={links.linkedin} target="_blank">
+          </SocialMediaIcon> */}
+          {/* links.linkedin */}
+          <SocialMediaIcon href={''} target="_blank">
             <LinkedInIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2023 Prayag N. All rights reserved.</Copyright>
+        <Copyright>&copy; 2024 Eat Plek All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );

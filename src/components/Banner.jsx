@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/images/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import TrackVisibility from "react-on-screen";
-import me from '../assets/images/me.jfif';
+import me from '../assets/images/newEat.png';
+// import eatPluk from '../assets/images/newEat';
 import { resume } from "../data/constants";
 
 function Banner() {
@@ -12,7 +13,7 @@ function Banner() {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const toRotate = ["Eat Plek", "Eat Plek"];
   const period = 2000;
 
   useEffect(() => {
@@ -66,33 +67,33 @@ function Banner() {
                 >
                   {/* <span className="tagline">Welcome to my Portfolio</span> */}
                   <h1>
-                    {`Hi! I'm Prayag`} <br />{" "}
+                    {`Hi! Welcome`} <br />{" "}
                     <span
                       style={{ paddingLeft: "1rem" }}
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                      data-rotate='[ "Eat Plek", "Eat Plek"]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
                   <p>
-                    Self-taught MERN stack developer proficient in MongoDB,
-                    Express.js, React.js, and Node.js. Builds dynamic web apps
-                    and efficient RESTful APIs. Committed to continuous learning
-                    and delivering high-quality solutions.
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th
+                     century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with.
+                     
                   </p>
                   <a
-                    href={resume}
+                  // resume
+                    href={''}
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none" }}
                   >
                     <button className="tagline">
-                      Check Resume <ArrowRightCircle size={25} />
+                     Terms and Condition <ArrowRightCircle size={25} />
                     </button>
                   </a>
-                  
+
                 </div>
               )}
             </TrackVisibility>
@@ -104,7 +105,7 @@ function Banner() {
                   className={
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
-                  style={{display:'flex', justifyContent:'center'}}
+                  style={{ display: 'flex', justifyContent: 'center' }}
                 >
                   <img src={me} alt="Header Img" />
                 </div>
